@@ -1,5 +1,5 @@
 #1
-'''print('Hello, Python!')
+print('Hello, Python!')
 
 
 #2
@@ -102,4 +102,4 @@ inch = 2.54*sm
 foot = 12*inch
 yard = 3*foot
 mile = 1760*yard
-print(f'{yard} ярдов\n{mile} мили\n{foot} футов\n{inch} дюймов')'''
+print(f'{yard} ярдов\n{mile} мили\n{foot} футов\n{inch} дюймов')
