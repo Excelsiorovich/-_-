@@ -1,0 +1,94 @@
+#1
+price = str(input())
+print(price[-3])
+
+#2
+numbers_of_second = int(input())
+hour = numbers_of_second // (60 * 60)
+minutes = (numbers_of_second - hour * 60 ** 2) // 60
+seconds = numbers_of_second - hour * 60 * 60 - minutes * 60
+print(f'{hour} часов {minutes} минут {seconds} секунд')
+
+#3
+print(int(int(input()) % 2 != 0))
+
+#4
+x, y, n = map(int, input().split(' '))
+summm = (x * 100 + y) * n
+rub = summm // 100
+kop = summm - (rub * 100)
+print(f'{rub} руб. {kop} коп.')
+
+#6
+k = str(input())
+n = int(input())
+r = int(input())
+print(int(k * n) * r)
+
+#7
+raw = input('Enter number: ')
+number = '0123456789'
+for i in raw:
+    if i in number:
+        flag = 1
+    else:
+        flag = 0
+if flag == 1:
+    print(int(raw))
+else:
+    print('Is not a number')
+
+#8
+from math import acos
+from math import degrees
+a = int(input())
+b = int(input())
+c = int(input())
+angle_a = acos((b ** 2 + c ** 2 - a ** 2) / (2 * b * c))
+angle_b = acos((a ** 2 + c ** 2 - b ** 2) / (2 * a * c))
+angle_c = acos((b ** 2 + a ** 2 - c ** 2) / (2 * b * a))
+A = degrees(angle_a)
+B = degrees(angle_b)
+C = degrees(angle_c)
+print(A, B, C, sep='\n')
+
+#9
+# ATT = Количество попыток прохождения
+# COMP = Количество завершений
+# YDS = Проходные ярды
+# TD = Передачи на тачдаун
+# INT = Перехваты
+ATT = int(input())
+COMP = int(input())
+YDS = int(input())
+TD = int(input())
+INT = int(input())
+a = ((COMP / ATT) - 0.3) * 5
+b = (YDS / ATT - 3) * 0.25
+c = (TD / ATT) * 20
+d = 2.375 - ((INT / ATT) * 25)
+passer_rating = (a + b + c + d) / 6 * 100
+print(passer_rating)
+
+#10
+x, y = map(int, input().split(' '))
+print(int(x % y == 0 or y % x == 0))
+
+#11
+degree = float(input())
+hour = int(degree // 30)  # 360/12=30
+minets = int((degree - (hour * 30)) // 0.5)  # 30/60=0,5
+print(hour, minets)
+
+#12
+from datetime import datetime
+print(datetime.now())
+
+#13
+n = int(input())
+c = int(input())
+number = int(input())
+page = ((number - 1) // (n * c)) + 1
+column = (((number - 1) // n) % c) + 1
+line = (number - 1) % n + 1
+print(f'стрница {page} столбец {column} строка {line}')
