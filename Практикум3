@@ -48,17 +48,9 @@ r = int(input())
 print(int(k * n) * r)
 
 #7
-raw = input('Enter number: ')
-number = '0123456789'
-for i in raw:
-    if i in number:
-        flag = 1
-    else:
-        flag = 0
-if flag == 1:
-    print(int(raw))
-else:
-    print('Is not a number')
+raw = input('Enter number:')
+num = int(raw, 36)
+print(num)
 
 #8
 from math import acos
