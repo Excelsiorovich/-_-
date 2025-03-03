@@ -19,6 +19,28 @@ rub = summm // 100
 kop = summm - (rub * 100)
 print(f'{rub} руб. {kop} коп.')
 
+#5
+n = int(input))
+L_bracket=chr(ord('('))
+R_bracket=chr(ord()'))
+R_slash=chr (92)
+L_Slash=chr/ord(/'))
+underline=chr(ord('_'))
+equal=chr(ord ('='))
+dot=chrord (.))
+quotes=chrord("''))
+Double_quotes=chr(ord('''))
+up = L_bracket + R
+_slash +
+3*underline + L_slash + R_bracket + '
+middle = L_bracket+equal + quotes +
+dot + quotes + equal + R_bracket + ''
+down = (L_bracket + Double_quotes +
+R_bracket + underline +
+L_bracket + Double_quotes +
+R_bracket + '')
+print(f'{up*n}|n{middle*n}n{down*n}')
+
 #6
 k = str(input())
 n = int(input())
