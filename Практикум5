@@ -1,4 +1,5 @@
 # 1
+import turtle as ttl
 
 year = int(input())
 if year // 4 == 0:
