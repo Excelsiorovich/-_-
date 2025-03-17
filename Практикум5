@@ -92,7 +92,7 @@ print(count)
 
 # 7
 n = int(input('Кол-во станций на ветке: '))
-k = int(input('Станция отправдения: '))
+k = int(input('Станция отправления: '))
 m = int(input('Станция назначения: '))
 
 if abs(m - k) > n - abs(k - m):
